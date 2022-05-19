@@ -7,7 +7,13 @@
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.26.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
     "firebase": "^9.6.9",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-kakao-maps-sdk": "^1.0.4",
@@ -16,6 +22,8 @@
     "react-scripts": "5.0.0",
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
+    "sequelize": "^6.19.2",
+    "sequelize-auto": "^0.8.8",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
@@ -23,7 +31,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "nodemon server/src/main.js"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +51,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.29.4",
+    "prettier": "^2.6.2"
   }
 }
